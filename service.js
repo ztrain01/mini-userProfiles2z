@@ -5,7 +5,6 @@ app.service('mainService', function($http, $q) {
 
   this.getUsers = function() {
     var deferred = $q.defer();
-    
     $http({
     method: 'GET',
       url: 'http://reqr.es/api/users?page=1'
